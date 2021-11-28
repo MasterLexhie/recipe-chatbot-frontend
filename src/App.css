@@ -1,38 +1,39 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App > div {
+  width: 100%;
+  max-width: calc(100% - 2rem);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 700px){
+  .App > div {
+    max-width: calc(100% - 20rem);
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.react-chatbot-kit-chat-container {
+  width: 100%;
+}
+
+.react-chatbot-kit-chat-inner-container {
+  height: unset;
+}
+
+.react-chatbot-kit-chat-bot-message {
+  margin: 0;
+  width: 100%;
+}
+
+.react-chatbot-kit-chat-message-container {
+  height: unset;
+  min-height: 600px;
+  max-height: calc(100vh - 10rem);
 }
